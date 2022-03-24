@@ -106,4 +106,3 @@ random(0, 100)
 + [33个非常实用的JavaScript一行代码，建议收藏！](https://juejin.cn/post/7025771605422768159)
 + [一行 JS (以分号结束)能实现什么丧心病狂的功能？](https://www.zhihu.com/question/48187821)
 + [这些一行 JS 实现功能的代码，让你看起来像一个前端专家](https://juejin.cn/post/6921509748785283086)
-+ 
