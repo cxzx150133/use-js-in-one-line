@@ -5,7 +5,7 @@
 ## 获取 URL 的 GET 参数(仅浏览器可用)
 
 ```js
-let urlParams = () => Object.fromEntries(new URLSearchParams(location.search).entries())
+let getUrlParams = () => Object.fromEntries(new URLSearchParams(location.search).entries())
 ```
 
 ## 数组去重(仅限基础数据类型)
