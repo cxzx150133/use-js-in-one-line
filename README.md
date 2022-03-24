@@ -44,3 +44,15 @@ let repeat = (arr, n) => new Array(n).fill(arr).flatMap(item => item)
 let arr = [1, 2, 3]
 let output = repeat(arr) // output: [1, 2, 3, 1, 2, 3]
 ```
+
+## 深拷贝(慢，但是普适）
+
+```js
+let deepClone = (v) => JSON.parse(JSON.stringify(v))
+```
+
+## 获取类型
+
+```
+let getType = (v) => Object.prototype.toString.call(v).slice(8, -1)
+```
