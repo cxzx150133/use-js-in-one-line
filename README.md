@@ -51,8 +51,36 @@ let output = repeat(arr) // output: [1, 2, 3, 1, 2, 3]
 let deepClone = (v) => JSON.parse(JSON.stringify(v))
 ```
 
+### 使用
+
+```js
+let obj = { a: 0 }
+let obj_copy = deepClone(obj)
+obj.a = 1
+console.log(obj) // { a: 1 }
+console.log(obj_copy) // { a: 0 }
+```
+
 ## 获取类型
 
-```
+```js
 let getType = (v) => Object.prototype.toString.call(v).slice(8, -1)
+```
+
+### 使用
+
+```js
+getType(null) // Null
+getType(undefined) // Undefined
+getType(true) // Boolean
+getType(0) // Number
+getType(0n) // BigInt
+getType('') // String
+getType(Symbol()) // Symbol
+getType({}) // Object
+getType([]) // Array
+getType(() => []) // Function
+getType(new Set()) // Set
+getType(new Map()) // Map
+getType(new FormData()) // FormData
 ```
