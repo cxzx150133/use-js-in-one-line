@@ -86,3 +86,15 @@ getType(new Set()) // Set
 getType(new Map()) // Map
 getType(new FormData()) // FormData
 ```
+
+## 获取指定区间内的随机整数
+
+```js
+let random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+```
+
+### 使用
+
+```js
+random(0, 100)
+```
