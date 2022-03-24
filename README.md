@@ -3,17 +3,44 @@
 ## 获取 URL 的 GET 参数(仅浏览器可用)
 
 ```js
-Object.fromEntries(new URLSearchParams(location.search).entries())
+let urlParams = () => Object.fromEntries(new URLSearchParams(location.search).entries())
 ```
 
 ## 数组去重(仅限基础数据类型)
 
 ```js
-Array.from(new Set([1, 1, 2, 2, 3, 3])) // output: [1, 2, 3]
+let dedup = (arr) => Array.from(new Set(arr))
+```
+
+### 使用
+
+```
+let arr = [1, 1, 2, 2, 3, 3]
+let output = duplicate(arr) // output: [1, 2, 3]
 ```
 
 ## 数组长度翻 n 倍(相对位置不变)
 
 ```js
-[1, 2, 3].flatMap(item => new Array(2).fill(item)) // output: [1, 1, 2, 2, 3, 3]
+let repeat = (arr, n) => arr.flatMap(item => new Array(n).fill(item))
+```
+
+### 使用
+
+```
+let arr = [1, 2, 3]
+let output = repeat(arr) // output: [1, 1, 2, 2, 3, 3]
+```
+
+## 数组长度翻 n 倍(整体翻倍)
+
+```
+let repeat = (arr, n) => new Array(arr.length).fill(arr).flatMap(item => item)
+```
+
+### 使用
+
+```
+let arr = [1, 2, 3]
+let output = repeat(arr) // output: [1, 2, 3, 1, 2, 3, 1, 2, 3]
 ```
