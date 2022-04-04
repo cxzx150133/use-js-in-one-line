@@ -99,6 +99,42 @@ let random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 random(0, 100)
 ```
 
+## 反转字符串
+
+```js
+let reverse = str => str.split('').reverse().join('');
+```
+
+### 使用
+
+```js
+reverse('javascript') // tpircsavaj
+```
+
+## 数组求和
+
+```js
+let sum = arr => arr.reduce((a, b) => a + b)
+```
+
+### 使用
+
+```js
+sum([1, 2, 3]) // 6
+```
+
+## 数组求平均值
+
+```js
+let avg = arr => arr.reduce((a, b) => a + b) / arr.length
+```
+
+### 使用
+
+```js
+avg([1, 2, 3]) // 2
+```
+
 # 拓展阅读
 
 + https://1loc.dev/
