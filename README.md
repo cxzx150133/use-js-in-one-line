@@ -161,6 +161,19 @@ let fact = n => new Array(n).fill().map((item, idx) => idx + 1).reduce((a, b) =>
 fact(5) // 120
 ```
 
+## 计算阶乘(递归)
+
+···js
+let fact = n => n > 0 ? n * fact(n - 1) : 1
+```
+
+### 使用
+
+```js
+fact(5) // 120
+```
+
+
 # 拓展阅读
 
 + https://1loc.dev/
