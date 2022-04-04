@@ -137,6 +137,30 @@ let arr = [1, 2, 3]
 avg(arr) // 2
 ```
 
+## 生成连续的正整数序列
+
+```js
+let func = n => new Array(n).fill().map((item, idx) => idx + 1)
+```
+
+### 使用
+
+```js
+func(5) // [1, 2, 3, 4, 5]
+```
+
+## 计算阶乘
+
+```js
+let fact = n => new Array(n).fill().map((item, idx) => idx + 1).reduce((a, b) => a * b)
+```
+
+### 使用
+
+```js
+fact(5) // 120
+```
+
 # 拓展阅读
 
 + https://1loc.dev/
