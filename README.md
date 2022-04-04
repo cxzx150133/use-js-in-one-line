@@ -151,7 +151,7 @@ fact(5) // 120
 
 ## 生成 [min, max] 区间的连续整数序列
 
-```
+```js
 let func = (start, end) => start < end ? [start, ...func(start + 1, end)] : [end]
 ```
 
