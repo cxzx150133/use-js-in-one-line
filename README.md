@@ -18,7 +18,7 @@ let dedup = (arr) => Array.from(new Set(arr))
 
 ```js
 let arr = [1, 1, 2, 2, 3, 3]
-let output = duplicate(arr) // output: [1, 2, 3]
+let output = dedup(arr) // output: [1, 2, 3]
 ```
 
 ## 数组长度翻 n 倍(相对位置不变)
@@ -120,7 +120,8 @@ let sum = arr => arr.reduce((a, b) => a + b)
 ### 使用
 
 ```js
-sum([1, 2, 3]) // 6
+let arr = [1, 2, 3]
+sum(arr) // 6
 ```
 
 ## 数组求平均值
@@ -132,7 +133,8 @@ let avg = arr => arr.reduce((a, b) => a + b) / arr.length
 ### 使用
 
 ```js
-avg([1, 2, 3]) // 2
+let arr = [1, 2, 3]
+avg(arr) // 2
 ```
 
 # 拓展阅读
