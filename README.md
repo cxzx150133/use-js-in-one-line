@@ -161,6 +161,19 @@ let func = (start, end) => start < end ? [start, ...func(start + 1, end)] : [end
 func(1, 5) // [1, 2, 3, 4, 5]
 ```
 
+## 任意数量的数组合并
+
+```js
+let merge = (...args) => args.flatMap(arg => arg)
+```
+### 使用
+
+```js
+merge([1], [2], [3]) // [1, 2, 3]
+```
+
+###
+
 # 低可读性
 
 ## 生成连续的正整数序列
@@ -186,7 +199,6 @@ let fact = n => new Array(n).fill().map((item, idx) => idx + 1).reduce((a, b) =>
 ```js
 fact(5) // 120
 ```
-
 
 # 拓展阅读
 
