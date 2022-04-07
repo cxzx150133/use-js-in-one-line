@@ -172,7 +172,30 @@ let merge = (...args) => args.flatMap(arg => arg)
 merge([1], [2], [3]) // [1, 2, 3]
 ```
 
-###
+## 剔除数组中因为多了个逗号产生的 undefined (组合使用模板时容易碰到，与编码规范有关）
+
+```js
+let clean = (arr) => arr.filter(item => item !== undefined)
+```
+### 使用
+
+```js
+let arr = [
+  {
+    a: 1
+    // ...
+  },
+  /*
+    一大堆说明
+    ...
+  */
+  ,{
+    b: 2,
+    // ...
+  }
+]// [{ a: 1 }, 空, { b: 2 }]
+clean(arr) // [{ a: 1 }, { b: 2 }]
+```
 
 # 低可读性
 
