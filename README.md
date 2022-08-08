@@ -31,7 +31,7 @@ let repeat = (arr, n) => arr.flatMap(item => new Array(n).fill(item))
 
 ```js
 let arr = [1, 2, 3]
-let output = repeat(arr) // output: [1, 1, 2, 2, 3, 3]
+let output = repeat(arr, 2) // output: [1, 1, 2, 2, 3, 3]
 ```
 
 ## 数组长度翻 n 倍(整体翻倍)
@@ -44,7 +44,7 @@ let repeat = (arr, n) => new Array(n).fill(arr).flatMap(item => item)
 
 ```js
 let arr = [1, 2, 3]
-let output = repeat(arr) // output: [1, 2, 3, 1, 2, 3]
+let output = repeat(arr, 2) // output: [1, 2, 3, 1, 2, 3]
 ```
 
 ## 深拷贝(慢，但是普适）
