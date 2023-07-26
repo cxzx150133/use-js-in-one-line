@@ -223,6 +223,42 @@ let fact = n => new Array(n).fill().map((item, idx) => idx + 1).reduce((a, b) =>
 fact(5) // 120
 ```
 
+## 生成 A - Z
+
+```js
+let getAToZ = () => new Array(26).fill().map((_, i) => String.fromCharCode(65 + i))
+```
+
+### 使用
+
+```js
+getAToZ().join('') // ABCDEFGHIJKLMNOPQRSTUVWXYZ
+```
+
+## 生成 a - z
+
+```js
+let getAToZ = () => new Array(26).fill().map((_, i) => String.fromCharCode(97 + i))
+```
+
+### 使用
+
+```js
+getAToZ().join('') // abcdefghijklmnopqrstuvwxyz
+```
+
+## 生成 0 - 9
+
+```js
+let getZeroToNine = new Array(10).fill().map((_, i) => String.fromCharCode(48 + i))
+```
+
+### 使用
+
+```js
+getZeroToNine().join('') // 0123456789
+```
+
 # 拓展阅读
 
 + https://1loc.dev/
